@@ -8,7 +8,7 @@ using namespace std;
 
 CSearchTreeBinInt::CSearchTreeBinInt()
   {
-   pRoot   = 0;
+   pRoot   = nullptr;
   };
 
 void CSearchTreeBinInt::Insert(int dat)  
@@ -36,7 +36,7 @@ void CSearchTreeBinInt::Insert(Node*& rpNode, int dat)
 void CSearchTreeBinInt::Print() const {
 	Print(pRoot);
 }
-void CSearchTreeBinInt::Print(Node*& rpNode) const {
+void CSearchTreeBinInt::Print(Node*  rpNode) const {
 	if (rpNode == NULL) {
 	}
 	else {

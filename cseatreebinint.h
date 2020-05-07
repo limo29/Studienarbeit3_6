@@ -20,7 +20,7 @@ class CSearchTreeBinInt
    struct Node *pRoot;
 
    void Insert(Node*&, int);
-    void Print(Node*&)const;
+    void Print(Node*)const;
   };
 
 #endif  // SEARCHTREEBININT_H

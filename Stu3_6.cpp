@@ -20,9 +20,9 @@ void main()
    MyTree.Insert(510);
 
    MyTree.Print(); cout << endl;
-   cout << "Zahl der Baumknoten: " << MyTree.GetNrOfNodes() << endl;
+  // cout << "Zahl der Baumknoten: " << MyTree.GetNrOfNodes() << endl;
    // Zahl sollte beim 2. Aufruf nicht mehr neu berechnet werden
-   cout << "Zahl der Baumknoten: " << MyTree.GetNrOfNodes() << endl;
+  // cout << "Zahl der Baumknoten: " << MyTree.GetNrOfNodes() << endl;
    // ... erst danach wieder, falls Baum geaendert
    //MyTree.Insert(99);
    //cout << "Zahl der Baumknoten: " << MyTree.GetNrOfNodes() << endl;

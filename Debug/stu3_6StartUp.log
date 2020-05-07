@@ -1,0 +1,7 @@
+﻿  Stu3_6.cpp
+  cseatreebinint.cpp
+  cseatreebin.cpp
+  Generating Code...
+cl : command line warning D9035: option 'Gm' has been deprecated and will be removed in a future release
+cseatreebin.obj : warning LNK4075: ignoring '/EDITANDCONTINUE' due to '/SAFESEH' specification
+  stu3_6StartUp.vcxproj -> C:\Users\Elias\Documents\GitHub\Studienarbeit3_6\.\Debug\stu3_6StartUp.exe
