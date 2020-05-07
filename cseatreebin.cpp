@@ -15,5 +15,10 @@ CSearchTreeBin::CSearchTreeBin()
 void CSearchTreeBin::Insert(int dat)  
   {
    pInternalRep->Insert(dat);
+  
   }
+
+ void CSearchTreeBin::Print() const{
+	pInternalRep->Print();
+}
 

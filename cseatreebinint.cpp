@@ -33,3 +33,17 @@ void CSearchTreeBinInt::Insert(Node*& rpNode, int dat)
      }
   }
 
+void CSearchTreeBinInt::Print() const {
+	Print(pRoot);
+}
+void CSearchTreeBinInt::Print(Node*& rpNode) const {
+	if (rpNode == NULL) {
+	}
+	else {
+		if (rpNode->pLeft != nullptr) { Print(rpNode->pLeft); }
+		cout << rpNode->dat << endl;
+		if (rpNode->pRight != nullptr) { Print(rpNode->pRight); }
+	}
+	return;
+}
+

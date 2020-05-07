@@ -7,6 +7,8 @@ class CSearchTreeBinInt
    CSearchTreeBinInt(void);
 
    void Insert(int);
+   
+   void Print()const;
 
  private:
    struct Node 
@@ -18,6 +20,7 @@ class CSearchTreeBinInt
    struct Node *pRoot;
 
    void Insert(Node*&, int);
+    void Print(Node*&)const;
   };
 
 #endif  // SEARCHTREEBININT_H

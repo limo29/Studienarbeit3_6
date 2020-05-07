@@ -9,9 +9,12 @@ class CSearchTreeBin
    CSearchTreeBin(void);
 
    void Insert(int);
-
+   void Print() const;
+  
  private:
    CSearchTreeBinInt *pInternalRep;
+
+   
   };
 
 #endif  // SEARCHTREEBIN_H
