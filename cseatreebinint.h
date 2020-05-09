@@ -10,6 +10,8 @@ class CSearchTreeBinInt
    
    void Print()const;
 
+   void Loeschen() const;
+
  private:
    struct Node 
      {
@@ -21,6 +23,7 @@ class CSearchTreeBinInt
 
    void Insert(Node*&, int);
     void Print(Node*)const;
+	void Loeschen(Node*) const;
   };
 
 #endif  // SEARCHTREEBININT_H

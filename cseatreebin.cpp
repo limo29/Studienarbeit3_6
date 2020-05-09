@@ -21,4 +21,7 @@ void CSearchTreeBin::Insert(int dat)
  void CSearchTreeBin::Print() const{
 	pInternalRep->Print();
 }
+ void CSearchTreeBin::Loeschen() const {
+	 pInternalRep->Loeschen();
+ }
 

@@ -10,6 +10,7 @@ class CSearchTreeBin
 
    void Insert(int);
    void Print() const;
+   void Loeschen() const;
   
  private:
    CSearchTreeBinInt *pInternalRep;

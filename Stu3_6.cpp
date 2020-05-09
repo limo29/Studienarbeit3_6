@@ -20,6 +20,7 @@ void main()
    MyTree.Insert(510);
 
    MyTree.Print(); cout << endl;
+   MyTree.Loeschen(); cout << endl;
   // cout << "Zahl der Baumknoten: " << MyTree.GetNrOfNodes() << endl;
    // Zahl sollte beim 2. Aufruf nicht mehr neu berechnet werden
   // cout << "Zahl der Baumknoten: " << MyTree.GetNrOfNodes() << endl;

@@ -43,6 +43,24 @@ void CSearchTreeBinInt::Print(Node*  rpNode) const {
 		if (rpNode->pLeft != nullptr) { Print(rpNode->pLeft); }
 		cout << rpNode->dat << endl;
 		if (rpNode->pRight != nullptr) { Print(rpNode->pRight); }
+
+
+	}
+	return;
+}
+
+void CSearchTreeBinInt::Loeschen() const {
+	Loeschen(pRoot);
+}
+void CSearchTreeBinInt::Loeschen(Node* rpNode) const {
+	if (rpNode == NULL) {
+	}
+	else {
+		if (rpNode->pLeft != nullptr) { Loeschen(rpNode->pLeft); }
+		if (rpNode->pRight != nullptr) { Loeschen(rpNode->pRight); }
+		cout << rpNode->dat << endl;
+		delete rpNode;
+
 	}
 	return;
 }
