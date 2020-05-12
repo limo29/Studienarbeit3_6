@@ -1,3 +1,5 @@
+
+
 #include "cseatreebinint.h"
 #include <stdlib.h>
 #include <iostream>
@@ -11,12 +13,12 @@ CSearchTreeBinInt::CSearchTreeBinInt()
    pRoot   = nullptr;
   };
 
-void CSearchTreeBinInt::Insert(int dat)  
+void CSearchTreeBinInt::Insert(int dat)
   {
    Insert(pRoot, dat);
   }
 
-void CSearchTreeBinInt::Insert(Node*& rpNode, int dat) 
+void CSearchTreeBinInt::Insert(Node*& rpNode, int dat)
   {
    if (rpNode == NULL)
      {
@@ -34,34 +36,83 @@ void CSearchTreeBinInt::Insert(Node*& rpNode, int dat)
   }
 
 void CSearchTreeBinInt::Print() const {
-	Print(pRoot);
-}
-void CSearchTreeBinInt::Print(Node*  rpNode) const {
-	if (rpNode == NULL) {
-	}
-	else {
-		if (rpNode->pLeft != nullptr) { Print(rpNode->pLeft); }
-		cout << rpNode->dat << endl;
-		if (rpNode->pRight != nullptr) { Print(rpNode->pRight); }
-
-
-	}
-	return;
+    Print(pRoot);
 }
 
-void CSearchTreeBinInt::Loeschen() const {
-	Loeschen(pRoot);
+void CSearchTreeBinInt::Print(Node*  rpNode) const
+{
+    if (rpNode == NULL)
+    {
+    }
+    else {
+        if (rpNode->pLeft != nullptr)
+        {
+            Print(rpNode->pLeft);
+        }
+        
+        cout << rpNode->dat << endl;
+        
+        if (rpNode->pRight != nullptr)
+        {
+            Print(rpNode->pRight);
+        }
+    }
 }
-void CSearchTreeBinInt::Loeschen(Node* rpNode) const {
-	if (rpNode == NULL) {
-	}
-	else {
-		if (rpNode->pLeft != nullptr) { Loeschen(rpNode->pLeft); }
-		if (rpNode->pRight != nullptr) { Loeschen(rpNode->pRight); }
-		cout << rpNode->dat << endl;
-		delete rpNode;
 
-	}
-	return;
+void CSearchTreeBinInt::Loeschen (Node*& rpNode)
+{
+    if (rpNode == NULL)
+    {
+    }
+    else {
+        if (rpNode->pLeft != nullptr)
+        {
+            Loeschen(rpNode->pLeft);
+        }
+        
+        if (rpNode->pRight != nullptr)
+        {
+            Loeschen(rpNode->pRight);
+        }
+        
+        cout << "Nun wird die folgende Zahl aus dem Baum geloescht: ";
+        cout << rpNode->dat << endl;
+        delete rpNode;
+        rpNode = nullptr;
+        
+       
+    }
+}
+
+void CSearchTreeBinInt::Loeschen(void) {
+    Loeschen(pRoot);
+}
+
+int CSearchTreeBinInt::Number_of_Nodes(void){
+    this->counter = 0;
+    Count_Number_of_Nodes(pRoot);
+    return (this->counter);
+}
+    
+void CSearchTreeBinInt::Count_Number_of_Nodes(Node*& rpNode)const{
+    if (rpNode == NULL)
+    {
+        
+    }
+    else {
+        if (rpNode->pLeft != nullptr)
+        {
+            Count_Number_of_Nodes(rpNode->pLeft);
+        }
+        
+        // Hier wird der interne counter erhöht
+        this->counter = (this->counter + 1);
+        
+        
+        if (rpNode->pRight != nullptr)
+        {
+            Count_Number_of_Nodes(rpNode->pRight);
+        }
+    }
 }
 

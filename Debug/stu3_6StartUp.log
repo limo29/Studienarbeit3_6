@@ -1,2 +1,4 @@
-﻿cseatreebin.obj : warning LNK4075: /EDITANDCONTINUE wird aufgrund der Angabe von /SAFESEH ignoriert.
+﻿  cseatreebin.cpp
+cl : befehlszeile warning D9035: Die Option "Gm" ist veraltet und wird in einer der nächsten Versionen entfernt.
+cseatreebin.obj : warning LNK4075: /EDITANDCONTINUE wird aufgrund der Angabe von /SAFESEH ignoriert.
   stu3_6StartUp.vcxproj -> C:\Users\Elias\Documents\GitHub\Studienarbeit3_6\.\Debug\stu3_6StartUp.exe
